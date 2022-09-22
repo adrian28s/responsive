@@ -1,0 +1,40 @@
+* {
+  margin: autos;
+  padding: auto;
+}
+/*felx principal*/
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+/*movil*/ /*no encontre la manera de llamar solo a un div por eso todos los cuadrados estan en verde*/
+.flex-container > div{
+    color: white;
+    background-color: green;
+    width: auto;
+    margin: 5px;
+    text-align:justify;   
+}
+
+
+/*tablet*/ 
+@media screen and (min-width: 765px){ 
+    .contenedor {
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid ;
+        background-color: black;
+        color: aliceblue;
+        font-size: 20px;
+
+/*ordenador, no pude confirguralo para que se muevan los recuadros*/
+@media screen and (min-width: 1000px){ 
+    .contenedor {
+        margin: 5px;
+        padding: 5px;
+        border: 2px solid ;
+        background-color: black;
+        color: aliceblue;
+        font-size: 20px;
