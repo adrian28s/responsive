@@ -1,27 +1,69 @@
+
+
 * {
-  margin: autos;
-  padding: auto;
+  margin: 0px;
+  padding: 0px;
+  font-family: "roboto", cursive;
+  
 }
-/*felx principal*/
+
+/*Dispositivo movil*/
 .flex-container {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-  color: white;
-}
-/*movil*/ /*no encontre la manera de llamar solo a un div por eso todos los cuadrados estan en verde*/
-.flex-container > div{
-    color: white;
-    background-color: green;
-    width: auto;
     margin: 5px;
-    text-align:justify;   
+    padding: 5px;
+    border: 2px solid ;
+    background-color: black;
+    color: aliceblue;
+    font-size: 15px;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #03A9F4;
+    color: aliceblue;
+    text-align: start;
+    margin: 1px;
+}
 
-/*tablet*/ 
+.bloque1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #D22B1F;
+    text-align: start;
+    color: aliceblue;
+    margin: 1px;
+}
+.bloque2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #129A22;
+    text-align: start;
+    color: aliceblue;
+    margin: 1px;
+}
+.bloque3 {
+    background-color: #673AB7;
+    text-align: start;
+    color: aliceblue;
+    margin: 1px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color:#616161;
+    text-align: start;
+    color: aliceblue;
+    margin: 1px;
+}
+
+p {
+    padding: 10px;
+}
+/*dispositivo tablet*/
 @media screen and (min-width: 765px){ 
-    .contenedor {
+    .flex-container {
         margin: 5px;
         padding: 5px;
         border: 2px solid ;
@@ -29,12 +71,104 @@
         color: aliceblue;
         font-size: 20px;
 
-/*ordenador, no pude confirguralo para que se muevan los recuadros*/
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color: #03A9F4;
+        color: aliceblue;
+        text-align: start;
+        margin: 1px;
+    }
+    
+    .bloque1 {
+        display: flex;
+        flex-direction: row;
+        background-color: #D22B1F;
+        text-align: start;
+        color: aliceblue;
+        margin: 1px;
+    }
+    .flex-container2 {
+        display: flex;
+        flex-direction: row;
+        background-color: #129A22;
+        text-align: start;
+        color: aliceblue;
+        margin: 1px;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color:#616161;
+        text-align: start;
+        color: aliceblue;
+        margin: 1px;
+    }
+    
+    p {
+        padding: 10px;
+    }
+}
+
+/*dispositivo pantalla*/
 @media screen and (min-width: 1000px){ 
-    .contenedor {
+    .flex-container {
         margin: 5px;
         padding: 5px;
         border: 2px solid ;
         background-color: black;
         color: aliceblue;
         font-size: 20px;
+
+    }
+    
+    header{
+        display: flex;
+        flex-direction: column;
+        background-color: #03A9F4;
+        color: aliceblue;
+        text-align: start;
+        margin: 10px;
+        padding: 5px;
+    }
+    
+    .bloque1 {
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        background-color: #D22B1F;
+        text-align: start;
+        color: aliceblue;
+
+    }
+    .flex-container2 {
+        display: flex;
+        flex-direction: row;
+        background-color: #129A22;
+        text-align: start;
+        color: aliceblue;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    
+    footer {
+        margin: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        background-color:#616161;
+        text-align: start;
+        color: aliceblue;
+
+    }
+    
+    p {
+        padding: 10px;
+    }
+
+
+} /* en cada seccion del css se muestra el rango en el cual se adapta la paguina web al disposito de visualización*/
